@@ -1,0 +1,14 @@
+.navBar {
+  max-width: 1280px;
+  width: 90%;
+  margin: auto;
+}
+.navBar a {
+  text-decoration: none;
+}
+.navBar a:hover {
+  text-decoration: underline;
+}
+.navBar li {
+  list-style: none;
+}
