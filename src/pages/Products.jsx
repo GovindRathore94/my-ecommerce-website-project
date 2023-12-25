@@ -3,10 +3,11 @@ import Product from "../component/Product";
 
 // This is Products Page
 
+// Data API URL
+const endPoint = "https://dummyjson.com/products";
+
 function Products() {
   const [products, setProducts] = useState(null);
-
-  const endPoint = "https://dummyjson.com/products";
 
   async function fetchProducts() {
     const res = await fetch(endPoint);
@@ -29,6 +30,7 @@ function Products() {
                 <Product
                   key={product.id}
                   title={product.title}
+                  id={product.id}
                   thumbnail={product.thumbnail}
                 />
               </div>
